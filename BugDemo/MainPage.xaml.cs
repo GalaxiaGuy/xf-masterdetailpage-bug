@@ -17,7 +17,12 @@ namespace BugDemo
 
         async void NextButton_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Detail.Navigation.PushAsync(new NextPage());
+            await Detail.Navigation.PushAsync(new NextPage(), false);
+        }
+
+        async void AnimatedNextButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Detail.Navigation.PushAsync(new NextPage(), true);
         }
 
         void MenuButton_Clicked(System.Object sender, System.EventArgs e)

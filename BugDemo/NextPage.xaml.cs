@@ -12,9 +12,14 @@ namespace BugDemo
             InitializeComponent();
         }
 
-        async void Button_Clicked(System.Object sender, System.EventArgs e)
+        async void BackButton_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PopAsync();
+            await Navigation.PopAsync(false);
+        }
+
+        async void AnimatedBackButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PopAsync(true);
         }
     }
 }

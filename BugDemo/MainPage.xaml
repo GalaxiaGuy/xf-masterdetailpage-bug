@@ -17,6 +17,7 @@
                     <StackLayout>
                         <Button Clicked="MenuButton_Clicked" Text="Menu" />
                         <Button Clicked="NextButton_Clicked" Text="Next"/>
+                        <Button Clicked="AnimatedNextButton_Clicked" Text="Next Animated"/>
                     </StackLayout>
                 </ContentPage>
             </x:Arguments>

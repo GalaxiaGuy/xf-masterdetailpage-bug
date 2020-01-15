@@ -4,5 +4,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="BugDemo.NextPage"
     NavigationPage.HasNavigationBar="False">
-    <Button Clicked="Button_Clicked" Text="Back"/>
+    <StackLayout>
+        <Button Clicked="BackButton_Clicked" Text="Back"/>
+        <Button Clicked="AnimatedBackButton_Clicked" Text="Back Animated"/>
+    </StackLayout>
 </ContentPage>
