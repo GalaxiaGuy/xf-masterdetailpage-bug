@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MasterDetailPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BugDemo.MainPage"
+    x:Name="RootPage"
+    MasterBehavior="Popover">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master Title">
+            <Label Text="Master"/>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage NavigationPage.HasNavigationBar="False">
+                    <StackLayout>
+                        <Button Clicked="MenuButton_Clicked" Text="Menu" />
+                        <Button Clicked="NextButton_Clicked" Text="Next"/>
+                    </StackLayout>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
